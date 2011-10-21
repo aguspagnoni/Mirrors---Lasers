@@ -16,6 +16,8 @@ public class Board {
 	
 	public Cell getCell(int x, int y)
 	{
+		if (x < 0 || x >= board.length || y < 0 || y >= board[0].length)
+			return null;
 		return board[x][y];
 	}
 

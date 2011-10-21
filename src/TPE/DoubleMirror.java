@@ -6,6 +6,12 @@ public class DoubleMirror extends Cell {
 	
 	private int rotation;
 	
+	public DoubleMirror(int x, int y, int rotation)
+	{
+		super(x, y);
+		this.rotation = rotation;
+	}
+	
 	public void hit (Directions dir, Color c)
 	{
 		
